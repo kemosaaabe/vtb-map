@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
-function App() {
+export const App = () => {
+  const defaultState = {
+    center: [55.751574, 37.573856],
+    zoom: 12,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <YMaps>
+      <Map defaultState={defaultState}>
+        <Placemark geometry={[55.684758, 37.738521]} />
+      </Map>
+    </YMaps>
   );
-}
+};
 
 export default App;
