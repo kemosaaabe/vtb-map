@@ -19,11 +19,11 @@ const YandexMap = () => {
         }}
       >
         <GeolocationControl
-          options={{ float: "right" }}
+          options={{ position: { top: 400, right: 15 } }}
           data={{ image: "/assets/svg/geo.svg" }}
         />
         <ZoomControl
-          options={{ size: "small", position: { right: 10, top: 50 } }}
+          options={{ size: "small", position: { right: 15, top: 310 } }}
         />
       </Map>
     </YMaps>
