@@ -3,10 +3,18 @@
 :root {
   /* Colors */
   --color-white: #fff;
+  --color-black: #3d434c;
+  --color-grey: #f1f2f4;
+  --color-grey-dark: #6f7585;
   --color-blue: #0d69f2;
+  --color-blue-dark: #094bac;
 
   /* Fonts */
   --font-roboto: "Roboto", sans-serif;
+
+  /* Sizes */
+  --font-base: 1rem;
+  --font-md: 1.125rem;
 }
 
 * {
